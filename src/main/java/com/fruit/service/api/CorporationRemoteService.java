@@ -12,17 +12,15 @@ import java.util.List;
  */
 public interface CorporationRemoteService {
 
-    CorporationDTO remoteGetByAccount(String username);
+    CorporationDTO remoteGet(String id);
 
-    CorporationDTO remoteUpdate(CorporationDTO corporation, String username);
+    List<CorporationDTO> remoteFindByName(String name);
 
-    List<CorporationDTO> localFindByName(String name);
+    List<CorporationDTO> remoteFindByContact(String contact);
 
-    List<CorporationDTO> localFindByContact(String contact);
+    List<CorporationDTO> remoteFindByLegalPerson(String legalPerson);
 
-    List<CorporationDTO> localFindByLegalPerson(String legalPerson);
-
-    Page<CorporationDTO> localPage(Pageable pageable, String name, String legalPerson, String contact);
+    Page<CorporationDTO> remotePage(Pageable pageable, String name, String legalPerson, String contact);
 
     CorporationDTO insert(CorporationDTO corporation);
 

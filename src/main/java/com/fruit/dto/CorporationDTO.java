@@ -4,6 +4,8 @@ import com.fruit.enums.Level;
 import lombok.Data;
 
 import java.io.Serializable;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * Created by hanlei6 on 2016/8/7.
@@ -79,4 +81,6 @@ public class CorporationDTO implements Serializable {
     private Level level; // 等级,A:普通会员,B:铜牌会员,C:银牌会员,D:金牌会员
 
     private String status;
+
+    private Set<AccountDTO> accounts = new HashSet<>(0);
 }
