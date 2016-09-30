@@ -12,6 +12,8 @@ import java.io.Serializable;
 public class CorporationDTO implements Serializable {
     private static final long serialVersionUID = -3829272866464053335L;
 
+    private String id;
+
     private String category; // 0:个人, 1:企业
 
     private String name; // 名称
