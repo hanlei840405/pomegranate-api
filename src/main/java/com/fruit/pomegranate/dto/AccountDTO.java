@@ -1,4 +1,4 @@
-package com.fruit.dto;
+package com.fruit.pomegranate.dto;
 
 import lombok.Data;
 

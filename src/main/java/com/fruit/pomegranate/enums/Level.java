@@ -1,4 +1,4 @@
-package com.fruit.enums;
+package com.fruit.pomegranate.enums;
 
 import java.io.Serializable;
 

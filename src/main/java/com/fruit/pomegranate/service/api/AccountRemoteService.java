@@ -1,9 +1,9 @@
-package com.fruit.service.api;
+package com.fruit.pomegranate.service.api;
 
 
-import com.fruit.dto.AccountDTO;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
+import com.fruit.pomegranate.dto.AccountDTO;
+import com.fruit.strawberry.page.PageRequest;
+import com.fruit.strawberry.page.PageResponse;
 
 import java.util.List;
 
@@ -17,7 +17,7 @@ public interface AccountRemoteService {
     AccountDTO remoteGetByUsername(String username);
 
     // 查找
-    Page<AccountDTO> localPage(Pageable pageable, String corporationId);
+    PageResponse<AccountDTO> localPage(PageRequest pageable, String corporationId);
 
     AccountDTO insert(AccountDTO account);
 

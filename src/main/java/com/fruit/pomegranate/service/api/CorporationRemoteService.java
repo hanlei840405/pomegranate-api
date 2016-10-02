@@ -1,9 +1,9 @@
-package com.fruit.service.api;
+package com.fruit.pomegranate.service.api;
 
 
-import com.fruit.dto.CorporationDTO;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
+import com.fruit.pomegranate.dto.CorporationDTO;
+import com.fruit.strawberry.page.PageRequest;
+import com.fruit.strawberry.page.PageResponse;
 
 import java.util.List;
 
@@ -20,7 +20,7 @@ public interface CorporationRemoteService {
 
     List<CorporationDTO> remoteFindByLegalPerson(String legalPerson);
 
-    Page<CorporationDTO> remotePage(Pageable pageable, String name, String legalPerson, String contact);
+    PageResponse<CorporationDTO> remotePage(PageRequest pageable, String name, String legalPerson, String contact);
 
     CorporationDTO insert(CorporationDTO corporation);
 

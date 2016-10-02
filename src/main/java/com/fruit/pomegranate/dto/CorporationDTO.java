@@ -1,6 +1,6 @@
-package com.fruit.dto;
+package com.fruit.pomegranate.dto;
 
-import com.fruit.enums.Level;
+import com.fruit.pomegranate.enums.Level;
 import lombok.Data;
 
 import java.io.Serializable;
